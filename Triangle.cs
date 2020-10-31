@@ -21,7 +21,7 @@ namespace ConsoleApp2
 
 
 
-            if (x == y && y == z)
+            if (x == y && y ==  z)
             {
                 Console.Write("This is an equilateral triangle.\n");
             }

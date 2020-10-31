@@ -36,7 +36,7 @@ namespace ConsoleApp2
         }
         void ShowInfo()
         {
-            CourseName = "C#";
+            CourseName = "C #";
             CourseCode = "Rahim";
             CourseCredit = 3;
         }

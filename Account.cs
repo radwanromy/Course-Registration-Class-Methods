@@ -32,7 +32,7 @@ namespace ConsoleApp2
         public bool withdraw(double outAmt)
         {
             bool chk = true;
-            if (outAmt <= balance)
+            if (outAmt <=  balance)
             {
                 balance -= outAmt;
             }
