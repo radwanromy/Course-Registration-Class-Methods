@@ -20,23 +20,23 @@ namespace ConsoleApp2
         {
             return this.accName;
         }
-        string getName()
+        string getId()
         {
             return this.acid;
         }
         public void Deposit(int amount)
         {
-            balance += addAmt;
+            balance += amount;
         }
 
-        public bool withdraw(double outAmt)
+        public bool withdraw(int amount)
         {
             bool chk = true;
-            if (outAmt <=  balance)
+            if (amount <=  balance)
             {
-                balance -= outAmt;
+                balance -= amount;
             }
-            else if (outAmt > balance)
+            else if (amount > balance)
             {
                 chk = false;
             }
@@ -45,13 +45,7 @@ namespace ConsoleApp2
 
         public int getBalAfter(int mos)
         {
-            double prin = balance;
-            double intFeed;
-            for (int g = 1; g <= mos; g++)
-            {
-                intFeed = prin * interest;
-                prin += intFeed;
-            }
+            int prin = balance;
             return prin;
         }
     }
